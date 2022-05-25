@@ -102,3 +102,96 @@ justify-content: space-between;
 {
     background-color: #c14f8e;
 }
+
+
+/* media queries */
+@media (max-width:991px)
+{
+.style-switcher
+{
+    position:absolute;
+    right: 0px;
+    top: 20px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transform: translateX(100%)
+}
+
+.style-switcher .style-switcher-toggler{
+    padding-right: 0px;
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    text-align: center;
+    font-size: 70px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100%;
+    border: 1px solid var(--bg-black-50);
+    margin-right: 25px;
+    margin-bottom: 2500px;
+    transition: all 0.3 ease;
+    border-radius: 50%;
+}
+
+.style-switcher .day-night {
+    padding-right: 0px;
+    position: absolute;
+    height: 100px;
+    width: 90px;
+    text-align: center;
+    font-size: 70px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100%;
+    border: 1px solid var(--bg-black-50);
+    margin-right: 25px;
+    margin-top: 60px;
+    margin-bottom: 2500px;
+    transition: all 0.3 ease;
+    border-radius: 50%;
+}
+
+}
+
+@media (max-width:767px)
+{
+    .style-switcher
+    {
+        position:absolute;
+        right: 0;
+        top: 20px;
+        padding: 15px;
+        width: 200px;
+        border: 1px solid var(--bg-black-50);
+        background: var(--bg-black-100);
+        z-index: 101;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        transform: translateX(100%)
+    }
+    .style-switcher .s-icon
+    {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        font-size: 20px;
+        background: var(--bg-black-100);
+        color: var(--text-black-900);
+        right: 100%;
+        border: 1px solid var(--bg-black-50);
+        margin-right: 25px;
+        margin-top: 1px;
+        margin-bottom: 2500px;
+        cursor: pointer;
+        transition: all 0.3 ease;
+        border-radius: 50%;
+    }
+
+}
