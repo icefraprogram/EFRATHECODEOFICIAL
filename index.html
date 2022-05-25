@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Efra The Code</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyboards" content="portafolio,programacion,web,desing,">
+        <meta name="description" content="Mi portafolio">
+        <meta name="author" content="Efrain wilches">
+        <meta name="copyright" content="efrathecode">
+       <!--  CSS FILES  -->
+        <link rel="stylesheet" href="portafolio.css">
+        <link rel="stylesheet" href="color1.css">
+        <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="shortcoutlogomini.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- ==== Style Switcher ==== -->
+    <link rel="stylesheet" href="color1.css" class="alternate-style" title="color1"
+    disabled>
+    <link rel="stylesheet" href="color2.css" class="alternate-style" title="color2" 
+    disabled>
+    <link rel="stylesheet" href="color3.css" class="alternate-style" title="color3" 
+    disabled>
+    <link rel="stylesheet" href="color4.css" class="alternate-style" title="color4"
+     disabled>
+    <link rel="stylesheet" href="color5.css" class="alternate-style" title="color5"
+    disabled>
+    <link rel="stylesheet" href="style-switcher.css">
+   <!--====================================== #form ====================================== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('BUp9FCDVQyICQKCi1');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <!-- #form -->
+
+    </head>
+    <body>
+
+<!-- ==== Main container start ==== -->
+<div class="main-container">
+   
+
+    <!-- ==== aside start ==== -->
+    <div class="aside">
+        <div class="logo">
+            <a href="#"><span>E</span>FRATHECODE</a>    
+        </div>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <ul class="nav">
+        <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i>Acerca de</a></li>
+        <li><a href="#service"><i class="fa fa-list"></i>Servicios</a></li>
+        <li><a href="#portafolio"><i class="fa fa-briefcase"></i>Portafolio</a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i>Contacto</a></li>
+       
+        
+    </ul>
+    </div>
+
+</div>
+
+<!-- ==== Main content start ==== -->
+<div class="main-content">
+
+
+    <!-- ==== Home section Start ==== -->
+    <section class="home section " id="home">
+        <div class="container">
+            <div class="row">
+                <div class="home-info padd-15">
+                    <h3 class="hello">Hola, mi nombre es <span class="name">EfraTheCode </span></h3>
+                    <h3 class="my-profession">Soy  <span class="typing">web designer</span></h3>
+                    <p>Soy un Diseñador web con extensos conocimientos y experiencia otorgada con el tiempo en este rubro.
+                        Especializado en Diseño Web, Diseño Grafico, y mucho mas...</p> 
+                    <a href="#contact" class="btn hire-me">Contrátame</a>
+                  </div>
+                  <div class="home-img padd-15">
+                  <img src="efra1.png" alt="">
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <!-- ==== Home section End ==== -->
+
+
+
+      <!-- ==== about section start ==== -->
+    <section class="about section "id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Acerca de mi</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-content padd-15">
+                   <div class="row">
+                      <div class="about-text padd-15">
+                          <h3>Soy Efra <span> Diseñador web </span></h3>
+                          <p>Mejor conocido como EfraTheCode.</p>
+                      </div> 
+                   </div>
+                   <div class="row">
+                       <div class="personal-info padd-15">
+                           <div class="row">
+                               <div class="info-item padd-15">
+                                   <p>Cumpleaños : <span>6 mar 2003</span></p>
+                               </div>
+                               <div class="info-item padd-15">
+                                <p>Edad : <span>19</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Email : <span>efrathecode@gmail.com</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p> Numero telefonico : <span> +54 1149808754</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Ciudad : <span>Buenos Aires</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Freelance : <span> Disponible</span></p>
+                            </div>
+                           </div>
+                                <div class="row">
+                                    <div class="buttons">
+                                        <a href="#portafolio" class="btn"> Portafolio</a>
+                                        <a href="#contact" class="btn contrata me">Contrátame</a>
+                                    </div>
+                                </div>
+                     </div>
+                        <div class="skills padd-15">
+                           <div class="row">
+                              <div class="skill-item">
+                                  <h5>CSS</h5>
+                                  <div class="stars">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                  </div>
+                             </div>
+                             <div class="skill-item">
+                                  <h5>JS</h5>
+                                  <div class="stars">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                  </div>
+                             </div>
+                             <div class="skill-item">
+                                  <h5>HTML</h5>
+                                  <div class="stars">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                  </div>
+                             </div>
+                             <div class="skill-item">
+                                  <h5>PHP</h5>
+                                  <div class="stars">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                  </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                     <div class="education padd-15">
+                         <h3 class="title">Educacion</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- ==== timeline item start ==== --> 
+                                   <div class="timeline-item">
+                                       <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2018 - 2022
+                                    </h3>   
+                                    <h4 class="timeline-title">Estudio autodidacta</h4>
+                                    <p class="timeline-text">He estudiado de manera autodidacta desde los 16 años.
+                                        Aprendiendo desde diversas fuentes y estando siempre actualizado en las ultimas tecnologias
+                                        para optimizar los servicios y llevarlos a su maximo nivel.</p>
+                                   </div>
+                                    <!-- ==== timeline item End ==== --> 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                     <div class="experience padd-15">
+                        <h3 class="title">Especialidad</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- ==== timeline item start ==== --> 
+                                   <div class="timeline-item">
+                                       <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2018 - 2022
+                                    </h3>   
+                                    <h4 class="timeline-title">Especializado en cualquier ambito</h4>
+                                    <p class="timeline-text">He hecho paginas web para Clientes desde orientadas a Restaurantes, Hasta
+                                        Consultorios Esteticos.
+                                    Solo es cuestion de que el Cliente me diga que es lo que desea, y yo realizare el trabajo con efectividad y rapidez.</p>
+                                   </div>
+                                    <!-- ==== timeline item End ==== --> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+      <!-- ==== about section End ==== --> 
+
+    
+      
+
+      <!-- ==== Service section start ==== --> 
+      <section class="service section " id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                      <h2>Servicios</h2>  
+                    </div>
+                </div>
+                <div class="row">
+                   <!-- ==== Service item start ==== -->     
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Diseño Responsive</h4>
+                                <p>Haciendo que tu pagina sea compatible con cualquier dispositivo.</p>
+                            </div>
+                        </div>
+                   <!-- ==== Service item End ==== -->    
+                   
+                   <!-- ==== Service item 2 start ==== -->     
+                      <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+                            <h4>Diseño Web</h4>
+                            <p>Crearé tu pagina utilizando de forma eficiente los mejores lenguajes de programacion del momento.</p>
+                        </div>
+                    </div>
+                   <!-- ==== Service item 2 End ==== -->   
+                      
+                   <!-- ==== Service item 3 start ==== -->     
+                         <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Diseño Grafico</h4>
+                                <p>Con conocimientos en Photoshop para aplicarlo en cualquier entorno y llevar tu pagina web a otro nivel.</p>
+                            </div>
+                        </div>
+                   <!-- ==== Service item 3 End ==== -->    
+
+                   <!-- ==== Service item 4 start ==== -->     
+                      <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <h4>HTML</h4>
+                            <p>Experto en la codificacion del esqueleto de tu pagina web.</p>
+                        </div>
+                    </div>
+                   <!-- ==== Service item 4 End ==== -->   
+               
+                   <!-- ==== Service item 5 start ==== -->     
+                           <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Posicionamiento</h4>
+                                <p>El mejor Posicionamiento para tu pagina web utilizando las palabras claves.</p>
+                            </div>
+                        </div>
+                   <!-- ==== Service item 5 End ==== --> 
+
+                   <!-- ==== Service item 6 start ==== -->     
+                               <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-bullhorn"></i>
+                                    </div>
+                                    <h4>Comunity Manager</h4>
+                                    <p>Habilitado para manejar de la mejor forma las redes sociales de tu Empresa</p>
+                                </div>
+                            </div>
+                   <!-- ==== Service item 6 End ==== --> 
+
+               
+                </div>
+                </div>
+      </section>
+      
+      <!-- ==== Service section End ==== -->   
+
+
+
+      
+      <!-- ==== Portafolio section start ==== -->
+     <section class="portafolio section" id="portafolio">
+         <div class="container">
+             <div class="row">
+                 <div class="section-title padd-15">
+                    <h2>Portafolio</h2>
+                 </div>
+             </div>
+             <div class="row">
+                <div class="portafolio-heading padd-15">
+                    <h2>Mi ultimo proyecto :</h2>
+                </div>
+             </div>
+             <div class="row">
+                  <!-- ==== Portafolio item start ==== --> 
+                  <div class="portafolio-item padd-15">
+                      <div class="portafolio-item-inner shadow-dark">
+                          <div class="portafolio-img">
+                              <img src="the buguer man.png"  alt=""> 
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ==== Portafolio item End ==== -->   
+             </div>
+         </div>
+     </section>
+     
+      <!-- ==== Portafolio section End ==== -->      
+      
+
+
+      <!-- ==== Contact us section Start ==== --> 
+      <section class="contact section" id="contact">
+         <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Contáctame</h2>
+                </div>
+            </div>
+            <h3 class="contact-title padd-15">Tienes alguna pregunta ?</h3>
+            <h4 class="contact-sub-title padd-15">ESTOY A TU SERVICIO</h4>
+            <div class="row">
+                <!-- ==== Contact info item start ==== -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Llamanos al </h4>
+                        <p>+54 1149808754</p>
+                    </div>
+                <!-- ==== Contact info item end ==== -->  
+
+                <!-- ==== Contact info item start ==== -->
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                    <h4>Office</h4>
+                    <p>Efrathecoders</p>
+                </div>
+            <!-- ==== Contact info item end ==== --> 
+            
+            <!-- ==== Contact info item start ==== -->
+            <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope "></i></div>
+                <h4>Email</h4>
+                <p>efrathecode@gmail.com</p>
+            </div>
+        <!-- ==== Contact info item end ==== -->  
+            </div>
+            <h3 class="contact-title padd-15">ENVÍAME UN EMAIL</h3>
+            <h4 class="contact-sub-title padd-15">RESPONDERÉ RAPIDAMENTE</h4>
+         <!-- ==== Contact form  start ==== --> 
+         <div class="row">
+            <form 
+            action="https://formspree.io/f/xlezzgqb"
+            method="POST"
+             >
+            <div class="contact-form padd-15">
+                <div class="row">
+                    <div class="form-item col-6 padd-15">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                        </div>
+                    </div>
+                    <div class="form-item col-6 padd-15">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-item col-12 padd-15">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Asunto" name="asunto">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-item col-12 padd-15">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" id="" placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-item col-12 padd-15">
+                       <button type="submit" class="btn">Enviar Mensaje</button>
+                    </div>
+                </div>
+             </div>
+            </form>
+            </div>
+         
+         <!-- ==== Contact form  end ==== --> 
+        
+        </div> 
+      </section>
+      <!-- ==== Contact us section End ==== --> 
+
+<!-- ==== Main content end ==== -->
+
+</div>
+<!-- ==== Main container end ==== -->
+
+<!-- ==== Style Switcher Start ==== -->
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas "></i>
+    </div>
+    <h4>Colores</h4>
+    <div class="colors">
+        <span class="color1" onclick="setActiveStyle('color1')"></span>
+        <span class="color2" onclick="setActiveStyle('color2')"></span>
+        <span class="color3" onclick="setActiveStyle('color3')"></span>
+        <span class="color4" onclick="setActiveStyle('color4')"></span>
+        <span class="color5" onclick="setActiveStyle('color5')"></span>
+    </div>
+    <h4 id="language">Language</h4>
+    <div class="language">
+        <span class="es">Español</span>
+        <input type="checkbox" class="check">
+        <span class="en">English</span>
+    </div>
+</div>
+<!-- ==== Style Switcher End ==== -->
+<!-- ==== JS files ==== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script src="java.js"></script>
+<script src="java-switcher.js"></script>
+</body>
+</html>
